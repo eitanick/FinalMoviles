@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "483689885192",
+    "firebase_url": "https://fir-clinicplace.firebaseio.com",
+    "project_id": "firebase-clinicplace",
+    "storage_bucket": "firebase-clinicplace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483689885192:android:ff7e1239f9295b78",
+        "android_client_info": {
+          "package_name": "com.example.anthony.clinicplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483689885192-qcorgjsod8nvtpasl0hu1j2bhglampjb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "483689885192-s833h2sfk7ck0r12eopqpdf9njsp65jd.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "483689885192-bcgvhtdpgk807i9g466hin1rtiemk84l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anthony.clinicplace",
+            "certificate_hash": "8ca1cbc705b804aef2b04f7fe1ed3abef6df7bbd"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuGHrOCu1xbDnyL2nBOJPPuS36RIY2soQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483689885192-qcorgjsod8nvtpasl0hu1j2bhglampjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

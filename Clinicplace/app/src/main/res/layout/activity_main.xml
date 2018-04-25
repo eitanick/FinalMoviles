@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context="com.example.anthony.clinicplace.MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLINICPLACE"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:textSize="35sp"
+        android:padding="20dp"
+        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/iron"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario: "
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintLeft_toRightOf="parent"
+       android:layout_marginTop="30dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="9dp"
+        android:hint="Ingrese usuario"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña: "
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintLeft_toRightOf="parent"
+
+        android:layout_marginTop="30dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ingrese contraseña"
+        app:layout_constraintLeft_toRightOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:layout_marginTop="15dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+
+    <TextView
+        android:id="@+id/recuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste la contraseña?"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        app:layout_constraintTop_toBottomOf="@+id/recuperar"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <Switch
+        android:id="@+id/mantener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/recuperar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantener sesion activa"
+        app:layout_constraintLeft_toRightOf="@+id/mantener"
+        app:layout_constraintTop_toBottomOf="@id/recuperar"
+        />
+    <TextView
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Usuario?"
+        app:layout_constraintTop_toBottomOf="@id/ingresar"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

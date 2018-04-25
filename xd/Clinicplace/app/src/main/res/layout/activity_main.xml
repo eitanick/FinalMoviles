@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context="com.example.anthony.clinicplace.MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLINICPLACE"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:textSize="35sp"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario: "
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintLeft_toRightOf="parent"
+
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser"
+
+        android:hint="Ingrese correo"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+      />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña: "
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintLeft_toRightOf="parent"
+
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ingrese contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+       />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste la contraseña?"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+
+        />
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <Switch
+        android:id="@+id/keepSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantener sesion activa"
+        app:layout_constraintLeft_toRightOf="@+id/keepSession"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+        />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Usuario?"
+        app:layout_constraintTop_toBottomOf="@+id/logIn"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

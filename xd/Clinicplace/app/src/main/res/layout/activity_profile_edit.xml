@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.anthony.clinicplace.ProfileEditActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/iron"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture"
+        app:layout_constraintLeft_toRightOf="@+id/txtUsername"
+        android:text="Username"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername"
+        app:layout_constraintLeft_toRightOf="@+id/txtemail"
+        android:text="Username"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail"
+        app:layout_constraintLeft_toRightOf="@+id/txtNombre"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:hint="Ingrese Nombres"
+        />
+    <TextView
+        android:id="@+id/txtApellidos"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintLeft_toRightOf="@+id/txtApellidos"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:hint="Ingrese Apellidos"
+        />
+
+    <TextView
+        android:id="@+id/txtDNI"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="DNI"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos"
+        app:layout_constraintLeft_toRightOf="@+id/txtDNI"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:hint="Ingrese DNI"
+        />
+    <TextView
+        android:id="@+id/txtUbicacion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtDNI"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDNI"
+        app:layout_constraintLeft_toRightOf="@+id/txtUbicacion"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:hint="Ingrese Distrito"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtUbicacion"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
